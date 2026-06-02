@@ -1,0 +1,228 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9F3EF; /* Light cream background */
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('pexels-goumbik-349609.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+  }
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #842B2F;
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 350px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    overflow-y: auto;
+  }
+  
+  .sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #842B2F; /* Primary color */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5E1A1E; /* Secondary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar button:hover {
+    background-color: #B78C87; /* Accent color on hover */
+  }
+
+/* Main Content Area */
+.meal-display {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meal-display h2 {
+    font-size: 2rem;
+    color: #842B2F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #B78C87;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #842B2F;
+    outline: none;
+    box-shadow: 0 0 8px rgba(132, 43, 47, 0.2);
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-group .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #5E1A1E;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.button-group .btn:hover {
+    background-color: #B78C87;
+}
+
+/* Footer */
+.footer-design {
+    background-color: #842B2F; /* Primary color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+/* Main layout styling */
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+/* Content area styling */
+.meal-display {
+    flex: 1;
+}
+
+/* Output display styling */
+#output {
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    max-height: 250px;
+    overflow-y: auto; /* Allows scrolling for long content */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Decorative top border for the output */
+#output::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 6px;
+    background-color: #842B2F;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Footer styling */
+.footer-design {
+    text-align: center;
+    padding: 20px;
+    background-color: #842B2F;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+
+

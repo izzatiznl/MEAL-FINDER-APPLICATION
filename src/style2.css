@@ -1,0 +1,260 @@
+/* style2.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9F3EF; /* Light cream background */
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('pexels-goumbik-349609.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+  }
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #842B2F; /* Primary color */
+    color: #FFFFFF;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.search-area input[type="text"] {
+    width: 50%;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: 2px solid #5E1A1E; /* Secondary color */
+    font-size: 1rem;
+    outline: none;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.search-area input[type="text"]:focus {
+    border-color: #B78C87; /* Accent color */
+    box-shadow: 0 0 8px rgba(132, 43, 47, 0.4);
+}
+
+.search-area button {
+    padding: 12px 25px;
+    background-color: #c82029; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.search-area button:hover {
+    background-color: #B78C87; /* Accent color */
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+.sidebar {
+  width: 250px;
+  height: 350px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #842B2F; /* Primary color */
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5E1A1E; /* Secondary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #B78C87; /* Accent color on hover */
+}
+
+
+
+
+.meal-display {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 50px; /* Optional padding */
+    width: 100%; /* Full width of the container */
+}
+
+.meal-item {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #B78C87; /* Accent color border */
+    min-width: 200px; /* Minimum width for each item */
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+}
+
+
+
+.meal-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.meal-item h3 {
+    font-size: 1.5rem;
+    color: #842B2F;
+    margin-bottom: 10px;
+}
+
+.meal-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.meal-item img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.meal-item ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.meal-item li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.meal-item h4 {
+    font-size: 1.2rem;
+    color: #842B2F;
+    margin-top: 15px;
+}
+
+.meal-item ol {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.footer-design {
+    background-color: #842B2F;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.quote-container {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-left: 5px solid #18465a; /* Left border for emphasis */
+    padding: 20px; /* Space inside the container */
+    margin: 40px 0 20px; /* Top margin increased to 40px to avoid touching the navigation bar, space below */
+    font-style: italic; /* Italicize the quote */
+    font-size: 1.2em; /* Slightly larger text */
+    color: #1b1c27; /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.quote-author {
+    text-align: right; /* Align author text to the right */
+    font-weight: bold; /* Bold for emphasis */
+    margin-top: 10px; /* Space above the author name */
+    color: #65403a; /* Different color for the author */
+}
+
+.content > div {
+    flex: 1; /* Allow the image div to take available space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    padding: 20px; /* Add some padding around the image */
+    
+}
+
+.content  {
+    width: 100%; /* Make the image responsive */
+    height:1450px ;
+     /* Maintain aspect ratio */
+
+  
+}
+
+
+
+
+
+.video-background {
+    width: 100%; /* Make the video take full width */
+    height: 100%; /* Make the video take full height */
+    z-index: -1; /* Send the video to the back */
+    object-fit: cover; /* Ensure the video covers the area without distorting the aspect ratio */
+}
+
+.video-container {
+    display: flex; /* Use flexbox to center the video */
+    align-items: center; /* Center the video vertically */
+    justify-content: center; /* Center the video horizontally */
+    width: 100%; /* Full width of the content area */
+    height: 100%; /* Full height of the content area */
+    position: relative; /* Allow absolute positioning inside */
+}
+
+

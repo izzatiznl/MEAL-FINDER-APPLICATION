@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>🍽️ Find Your Meal 🍲 </h1>
+        <p>Enter Category and Ingredient to search:</p>
+        <div class="search-area">
+            <input type="text" id="category_input" placeholder="e.g., Beef">
+            <input type="text" id="ingredient_input" placeholder="e.g., Cheese">
+            <button onclick="buttonClicked()">Search</button>
+        </div>
+    </header>
+    <div class="content">
+        <aside class="sidebar">
+            <h3>Explore:</h3>
+            <ul>
+                <li><a href="index3.html"><button>Homepage</button></a></li>
+                <li><a href="mealcategory.html"><button>Find Your Meal</button></a></li>
+                <li><a href="crud.html"><button>Your Grocery List</button></a></li>
+                <li><a href="mealplanner.html"><button>Meal Planner</button></a></li>
+               
+            </ul>
+        </aside>
+
+        <div>
+            <iframe src="https://www.youtube.com/embed/iK-ThX9kFaI?autoplay=1&mute=1&controls=0&loop=1&playlist=iK-ThX9kFaI" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen 
+            class="video-background"></iframe>
+        </div>
+    
+    </div>
+
+    <div class="quote-container">
+       <p>"You don’t need a silver fork to eat good food. 
+       A simple meal shared with loved ones can bring more joy and satisfaction than a lavish banquet. 
+       It's the company, the laughter, and the memories created around the table that make a meal truly special." </p>
+       
+    </div>
+    
+    
+
+        <main class="meal-display">
+            <div id="results">
+                <h3 id="demo1"></h3>
+                <h3 id="demo2"></h3>
+                <div id="demo3"></div>
+                <div id="demo4"></div>
+                <img id="mealImage" alt="" >
+            </div>
+        </main>
+
+        
+
+
+    <footer class="footer-design">
+        <p>&copy; 2024 Fork and Feast. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

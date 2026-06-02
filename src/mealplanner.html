@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <h1>🍽️ Weekly Meal Planner 🍲</h1>
+        <p>Select a day of the week and plan out your meals! Enter your choices for breakfast, lunch, and dinner.</p>
+        <p>Simplify your week with a structured menu and stay on top of your dietary goals!</p>
+    </header>
+    
+    <div class="content">
+        <aside class="sidebar">
+            <h3>Explore:</h3>
+            <ul>
+                <li><a href="index3.html"><button>Home</button></a></li>
+                <li><a href="mealcategory.html"><button>Find Your Meal</button></a></li>
+                <li><a href="crud.html"><button>Your Grocery List</button></a></li>
+                <li><a href="mealplanner.html"><button>Meal Planner</button></a></li>
+            </ul>
+        </aside>
+        
+        <main>
+            <h2>Select Day and Plan Your Meals📅</h2>
+            
+            <div class="form-group">
+                <label for="daySelect">Day:</label>
+                <select id="daySelect">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="breakfastInput">Breakfast:</label>
+                <input type="text" id="breakfastInput" placeholder="Enter breakfast meal">
+            </div>
+            
+            <div class="form-group">
+                <label for="lunchInput">Lunch:</label>
+                <input type="text" id="lunchInput" placeholder="Enter lunch meal">
+            </div>
+            
+            <div class="form-group">
+                <label for="dinnerInput">Dinner:</label>
+                <input type="text" id="dinnerInput" placeholder="Enter dinner meal">
+            </div>
+            
+            <div class="button-group">
+                <button id="btnCreate">Create</button>
+                <button id="btnRead">Read</button>
+                <button id="btnUpdate">Update</button>
+                <button id="btnDelete">Delete</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="output" ></div>
+    
+    <footer class="footer-design">
+        <p>&copy; 2024 Fork and Feast. All rights reserved.</p>
+    </footer>
+    
+    <script src="mealplanner.js"></script>
+</body>
+</html>
